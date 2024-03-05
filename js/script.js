@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 $('#video-container').on('click', function () {
     // Hide Image 5 and fade in the video
-    $('#image4-container').show('slow');
-    $('#image5-container').fadeToggle('slow');
+    $('#image4-container').show("");
+    $('#image5-container').fadeToggle("");
 
 });
