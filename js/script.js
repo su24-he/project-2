@@ -6,6 +6,10 @@ $(document).ready(function () {
     $('#image6-container').hide();
     $('#image7-container').hide();
     $('#image8-container').hide();
+    $('#image10-container').hide();
+    $('#image11-container').hide();
+    $('#image12-container').hide();
+    $('#image9-container').hide();
 
 
     // Add a click to image4-container
@@ -30,17 +34,40 @@ $(document).ready(function () {
         $('#image7-container').addClass('animation-color');
     });
 
+    $('#image3-container').click(function () {
+        $('#image10-container').show('slow');
+    });
+
+    $('#image10-container').click(function () {
+        $('#image11-container').fadeIn(2000);
+        $('#image12-container').fadeIn(2000);
+    });
+
+    $('#image1-container').click(function () {
+        $('#image9-container').show('slow');
+    });
+
+
+
 
 });
 
-    
-
+// restart
 
 $('#video-container').on('click', function () {
-    // Hide Image 5 and fade in the video
-    $('#image4-container').show("");
-    $('#image5-container').fadeToggle("");
-    $('#image6-container').fadeToggle("");
-    $('#image7-container').fadeToggle("");
-
+    // Show Image 4 and hide other images
+    $('#image4-container').show();
+    $('#image5-container').hide();
+    $('#image6-container').hide();
+    $('#image7-container').hide();
+    
+    // Remove the animation class for image6 and image7
+    $('#image6-container').removeClass('animation-color')
+    $('#image7-container').removeClass('animation-color')
+    
+    $('#image8-container').hide();
+    $('#image10-container').hide();
+    $('#image11-container').hide();
+    $('#image12-container').hide();
+    $('#image9-container').hide();
 });
