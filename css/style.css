@@ -12,6 +12,14 @@ body {
     border-image-slice: 10;
 }
 
+@font-face {
+    font-family: NexaRust;
+    src: url("../media/font/nexa-rust/NexaRustHandmade-Extended.otf");
+}
+p{
+    font-family: NexaRust;
+}
+
 .image-container {
     position: absolute;
     border-radius: 10px; /* Adjust as needed */
@@ -202,6 +210,16 @@ video {
     
 }
 
+/* Styles for Image 11 */
+#image11-container {
+    position:absolute;
+    left: 1000px;
+    top: 500px;
+    width: 350px;
+    height: 350px;
+    
+}
+
 /* (Red Lantern) Chinese calligraphy）Chinese tea culture） */
 .box p {
     position: absolute;
@@ -214,7 +232,7 @@ video {
     border-radius: 10px;
     text-align: center;
     margin: auto;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 1.5; 
 }
 
