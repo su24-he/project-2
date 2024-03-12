@@ -86,7 +86,6 @@ p{
     width: 405px;
     height: 350px;
 
-    animation: colorChange 5s infinite;
 }
 
 /* Styles for Image 7 */
@@ -97,18 +96,21 @@ p{
     width: 405px;
     height: 350px;
 
-    animation: colorChange 5s infinite;
 }
+.animation-color{
+    animation: colorChange 2s infinite;
+}
+
 
 @keyframes colorChange {
     0% {
-        filter: hue-rotate(45deg); 
+        filter: hue-rotate(45deg); /* Gold */
     }
     50% {
-        filter: hue-rotate(60deg); 
+        filter: hue-rotate(1deg); /* Red */
     }
     100% {
-        filter: hue-rotate(75deg);
+        filter: hue-rotate(60deg); /* Yellow */
     }
 }
 
@@ -170,4 +172,50 @@ video {
 .image-container:hover .overlay {
     height: 100%;
 }
+
+/* Styles for Image 8 */
+#image8-container {
+    position:absolute;
+    left: 900px;
+    top: 320px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Styles for Image 9 */
+#image9-container {
+    position:absolute;
+    left: 900px;
+    top: 480px;
+    width: 50px;
+    height: 50px;
+    
+}
+
+/* Styles for Image 10 */
+#image10-container {
+    position:absolute;
+    left: 900px;
+    top: 640px;
+    width: 50px;
+    height: 50px;
+    
+}
+
+/* (Red Lantern) Chinese calligraphy）Chinese tea culture） */
+.box p {
+    position: absolute;
+    left: 140px;
+    bottom:50px;
+    width: 300px;
+    height: 140px;
+    background-color: #ffcf90;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    font-size: 11px;
+    line-height: 1.5; 
+}
+
  
